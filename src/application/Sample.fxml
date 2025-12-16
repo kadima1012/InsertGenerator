@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <ComboBox fx:id="tableSelect" layoutX="14.0" layoutY="14.0" onHidden="#setView" onShowing="#initTableSelect" prefWidth="150.0" promptText="Select Table" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <TableView fx:id="view" layoutX="101.0" layoutY="87.0" prefHeight="200.0" prefWidth="226.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="viewColTable" prefWidth="240.0" text="Table" />
+          <TableColumn fx:id="viewColType" minWidth="0.0" prefWidth="210.0" text="Type SQL" />
+          <TableColumn fx:id="viewColData" prefWidth="235" text="Data" />
+        </columns>
+      </TableView>
+      <Button layoutX="295.0" layoutY="411.0" mnemonicParsing="false" onAction="#genInsert" text="Generate Insert" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="nbrLine" layoutX="508.0" layoutY="410.0" prefHeight="26.0" prefWidth="45.0" text="1" />
+      <Label fx:id="message" layoutX="26.0" layoutY="415.0" prefHeight="18.0" prefWidth="462.0" text="Select all data types" />
+   </children>
+</AnchorPane>

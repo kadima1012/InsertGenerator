@@ -1,0 +1,16 @@
+# IntelliJ / Eclipse
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+
+# Build / output
+/out/
+/bin/
+/build/
+/src/application/out/
+
+# Temporary
+*.class
+build.fxbuild
